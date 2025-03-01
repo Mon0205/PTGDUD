@@ -1,0 +1,28 @@
+.container {
+    padding: 20;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container input {
+    margin: 10px;
+    width: 90%;
+}
+
+.container label {
+    float: left;
+}
+
+.container table {
+    border: solid 1px;
+    width: 100%;
+    text-align: center;
+}
+
+.container button {
+    margin: 10px;
+}
+
+.container button:hover {
+    cursor: pointer;
+    scale: 1.1, 5;
+}
