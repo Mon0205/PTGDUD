@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(27, 143, 154);
+    text-align: center;
+}
