@@ -1,0 +1,43 @@
+.subscribe-container {
+    display: flex;
+    flex-direction: row;
+    /* Hiển thị hai phần theo hàng ngang */
+    align-items: center;
+    /* Căn giữa theo trục dọc */
+    gap: 20px;
+    /* Khoảng cách giữa hai bên */
+    width: 100%;
+    /* Đảm bảo toàn bộ container sử dụng đủ không gian */
+}
+
+.subscribe-container-left {
+    flex: 1;
+    /* Chia đều không gian bên trái */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Căn giữa nội dung theo chiều dọc */
+    text-align: left;
+    /* Căn chữ sang trái */
+    padding: 20px;
+    /* Tạo khoảng cách cho nội dung */
+}
+
+.subscribe-container-right {
+    flex: 1;
+    /* Chia đều không gian bên phải */
+    display: flex;
+    justify-content: center;
+    /* Đặt ảnh vào giữa */
+    align-items: center;
+    /* Căn giữa ảnh theo chiều dọc */
+}
+
+.subscribe-container-right img {
+    width: 50%;
+    /* Đảm bảo ảnh không vượt quá khung */
+    height: auto;
+    /* Giữ tỉ lệ ảnh */
+    border-radius: 10px;
+    /* Tùy chọn bo góc cho ảnh */
+}

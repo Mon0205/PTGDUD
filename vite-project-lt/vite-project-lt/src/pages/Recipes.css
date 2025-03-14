@@ -1,0 +1,149 @@
+.recipes-container {
+    width: 100%;
+    padding: 50px 100px;
+    background-color: aliceblue;
+    box-sizing: border-box;
+}
+
+.subscribe-includes {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.subscribe-includes-title {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.items-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.item-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item-card h6 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.item-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.subcribe-to-cook {
+    text-align: center;
+    margin: 50px auto;
+    /* background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    font-family: 'Arial', sans-serif; */
+}
+
+.subcribe-to-cook img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.subscribe-includes-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e91e63;
+    /* Màu hồng tương tự như trong ảnh */
+    margin-bottom: 10px;
+}
+
+.subcribe-to-cook p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.plan-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.plan-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 300px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.plan-option:hover {
+    border-color: #e91e63;
+    box-shadow: 0 3px 8px rgba(233, 30, 99, 0.2);
+}
+
+.plan-option input[type="radio"] {
+    accent-color: #e91e63;
+    cursor: pointer;
+}
+
+.plan-option label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.subscribe-btn {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.subscribe-btn:hover {
+    background-color: #d81b60;
+}
+
+.cancel-policy {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cancel-policy:hover {
+    color: #666;
+}

@@ -1,0 +1,101 @@
+/* Card container */
+.editor-card {
+    /* display: flex; */
+    /* flex-direction: row; */
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #eee;
+    padding: 20px;
+    gap: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.editor-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.editor-content {
+    display: flex;
+}
+
+/* Left: Image Section */
+.editor-content-left img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Right: Content Section */
+.editor-content-right {
+    /* text-align: left; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.editor-content-right p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.editor-content-right p:first-of-type {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.editor-content-right .editor-time {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.editor-content-right .editor-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.editor-content-right .editor-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.editor-content-right .editor-info p {
+    font-size: 14px;
+    color: #666;
+    font-weight: 600;
+    margin: 0;
+}
+
+.editor-content-right .editor-description {
+    font-size: 15px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.editor-content-right .editor-save {
+    align-self: flex-end;
+    font-size: 18px;
+    color: #ff5a5f;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.editor-content-right .editor-save:hover {
+    color: #ff3333;
+}

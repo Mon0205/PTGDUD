@@ -1,0 +1,415 @@
+.cooking-container {
+    width: 100%;
+    padding: 50px 100px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+.cooking-content {
+    display: flex;
+    flex-direction: row;
+    /* Hiển thị hai phần theo hàng ngang */
+    align-items: center;
+    /* Căn giữa theo trục dọc */
+    gap: 20px;
+    /* Khoảng cách giữa hai bên */
+    width: 100%;
+}
+
+.cooking-content-left {
+    flex: 1;
+    /* Chia đều không gian bên trái */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    /* Căn giữa nội dung theo chiều dọc */
+    text-align: left;
+    /* Căn chữ sang trái */
+    padding: 10px 10px 10px 10px;
+    /* Tạo khoảng cách cho nội dung */
+}
+
+.cooking-content-right {
+    flex: 1;
+    /* Chia đều không gian bên phải */
+    display: flex;
+    justify-content: center;
+    /* Đặt ảnh vào giữa */
+    align-items: flex-start;
+    /* Căn giữa ảnh theo chiều dọc */
+    align-self: start;
+    flex-direction: column;
+}
+
+.cooking-content-right img {
+    width: 100%;
+    /* Đảm bảo ảnh không vượt quá khung */
+    height: auto;
+    /* Giữ tỉ lệ ảnh */
+    border-radius: 10px;
+    /* Tùy chọn bo góc cho ảnh */
+}
+
+.cooking-content-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: start;
+    /* Căn nội dung từ trên xuống */
+    text-align: center;
+    padding: 20px;
+    /* Tăng khoảng cách để nội dung thoáng hơn */
+    /* gap: 15px; */
+    /* Thêm khoảng cách giữa các phần tử */
+}
+
+.cooking-content-left h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cooking-content-left p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.cooking-personal {
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cooking-personal-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cooking-personal-header img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ff3366;
+}
+
+.cooking-personal-header h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.cooking-personal-header .bookmark-btn {
+    margin-left: auto;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ff3366;
+}
+
+.cooking-personal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cooking-personal-content .row {
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+}
+
+.cooking-personal-content .col {
+    text-align: center;
+}
+
+.cooking-personal-content .col p:first-child {
+    font-size: 14px;
+    color: #999;
+}
+
+.cooking-personal-content .col p:last-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.recipe {
+    border: 2px dashed #ff3366;
+    /* Đường viền đứt đoạn màu hồng */
+    padding: 20px;
+    /* Khoảng cách bên trong */
+    border-radius: 10px;
+    /* Bo góc */
+    margin-top: 20px;
+    /* Khoảng cách phía trên */
+    text-align: left;
+    background-color: #fff;
+    /* Màu nền trắng */
+
+}
+
+.recipe ul {
+    list-style-type: symbols("-");
+    /* Bỏ ký hiệu mặc định của danh sách */
+    padding: 0;
+    /* Xóa padding mặc định */
+    margin: 0 0 20px 0;
+    /* Khoảng cách dưới danh sách */
+}
+
+.recipe ul li {
+    margin-bottom: 10px;
+    /* Khoảng cách giữa các dòng */
+    font-size: 16px;
+    /* Kích thước chữ */
+    color: #333;
+    /* Màu chữ */
+    line-height: 1.6;
+    /* Khoảng cách dòng */
+}
+
+.recipe button {
+    background-color: #ff3366;
+    /* Màu nền nút */
+    color: #fff;
+    /* Màu chữ */
+    font-size: 16px;
+    /* Kích thước chữ */
+    padding: 10px 20px;
+    /* Khoảng cách trong nút */
+    border: none;
+    /* Xóa viền nút */
+    border-radius: 50px;
+    /* Bo góc nút */
+    cursor: pointer;
+    /* Con trỏ chuột */
+    display: inline-flex;
+    /* Để căn giữa biểu tượng và chữ */
+    align-items: center;
+    /* Căn giữa dọc */
+    gap: 10px;
+    /* Khoảng cách giữa biểu tượng và chữ */
+}
+
+.recipe button:hover {
+    background-color: #e62e5c;
+    /* Màu nút khi hover */
+}
+
+.recipe button::before {
+    content: "+";
+    /* Biểu tượng cộng */
+    font-size: 18px;
+    /* Kích thước biểu tượng */
+}
+
+.step {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.step p {
+    text-align: left;
+}
+
+.opinion {
+    margin-top: 30px;
+}
+
+.opinion h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.opinion textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+    /* Tắt chức năng thay đổi kích thước */
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.opinion textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.opinion .send-button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.opinion .send-button button {
+    background-color: #ff3366;
+    /* Màu nút hồng */
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    bottom: 80px;
+    right: 50px;
+}
+
+.opinion .send-button button:hover {
+    background-color: #e62e5c;
+    /* Màu nút khi hover */
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+.tabs button {
+    padding: 10px 20px;
+    border: none;
+    /* background-color: #f8f8f8; */
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+.tabs .active-tab {
+    background-color: #fffeff;
+    color: #ff3366;
+    border-bottom: 1px solid #ff3366;
+    /* color: #fff; */
+}
+
+/* CSS cho phần user-comment */
+
+.user-comment {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.comment-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    /* border: 1px solid #e0e0e0; */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    /* background-color: #fff; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.comment-avatar {
+    margin-right: 15px;
+}
+
+.comment-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment-content p {
+    text-align: left;
+}
+
+.comment-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.comment-title p {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.comment-title .time {
+    font-size: 14px;
+    color: #999;
+}
+
+.comment-content p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.coment-react {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    /* Đặt các phần tử con theo chiều dọc */
+    gap: 20px;
+}
+
+.coment-react .icon {
+    display: flex;
+    align-items: center;
+    color: #e91e63;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.coment-react .reply {
+    color: #007bff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.coment-react .reply:hover {
+    color: #0056b3;
+}
+
+.coment-react-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.coment-react-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.show {
+    text-align: center;
+    color: #e91e63;
+}

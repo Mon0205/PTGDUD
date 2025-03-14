@@ -1,0 +1,62 @@
+.dishes-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.dishes-card h2 {
+    margin: 0 0 8px;
+}
+
+.dishes-card h5 {
+    margin: 0 0 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dishes-card p {
+    margin: 4px 0;
+    /* color: #555;
+    border-bottom: 1px solid #ddd; */
+}
+
+.img {
+    width: 200px;
+    height: 120px;
+    border-radius: 8px;
+    justify-self: start;
+}
+
+.p {
+    font-size: 10px;
+    color: rgb(220, 91, 112);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.p2 {
+    box-shadow: 0 0px 15px 0px rgba(230, 226, 226, 0.5);
+    border-radius: 8px;
+    width: 70px;
+    background-color: rgb(243, 219, 223);
+    bottom: 100%;
+}
+
+.text-clamp {
+    display: -webkit-box;
+    /* Sử dụng layout flexbox với webkit */
+    -webkit-line-clamp: 2;
+    /* Giới hạn 2 dòng */
+    -webkit-box-orient: vertical;
+    /* Căn dọc */
+    overflow: hidden;
+    /* Ẩn nội dung vượt quá */
+    text-overflow: ellipsis;
+    /* Thêm "..." nếu nội dung bị cắt */
+    line-height: 1.5;
+    /* Chiều cao dòng (tùy chỉnh theo thiết kế) */
+    min-height: calc(1.5em * 2);
+    /* Đảm bảo chiều cao tối thiểu bằng 2 dòng */
+}

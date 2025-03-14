@@ -1,0 +1,86 @@
+.pagination-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* Đảm bảo căn giữa các phần tử theo chiều dọc */
+    gap: 500px;
+    /* Thêm khoảng cách giữa các phần tử nếu cần */
+}
+
+.pagination-title h3 {
+    margin: 0;
+    /* Loại bỏ margin mặc định của <h1> */
+}
+
+.pagination-title .component {
+    display: inline-flex;
+    /* Đảm bảo button hiển thị linh hoạt */
+    align-items: center;
+    /* Căn giữa nội dung button theo chiều dọc */
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.recipe-card {
+    /* background-color: #f8f8f8; */
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card .recipe-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.recipe-card .recipe-title {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.recipe-card .recipe-time {
+    font-size: 14px;
+    color: #888;
+}
+
+.bookmark-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    border: none;
+    /* background-color: #f8f8f8; */
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.pagination .active {
+    background-color: #ff3366;
+    /* color: #fff; */
+}

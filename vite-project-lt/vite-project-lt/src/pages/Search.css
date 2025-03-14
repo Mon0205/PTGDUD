@@ -1,0 +1,38 @@
+.search-content {
+    width: 100%;
+    padding: 50px 100px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    /* Hiển thị hai phần theo hàng ngang */
+    align-items: center;
+    /* Căn giữa theo trục dọc */
+    gap: 20px;
+}
+
+.search-content-left {
+    flex: 0.5;
+    /* Chia đều không gian bên trái */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: start;
+    /* Căn giữa nội dung theo chiều dọc */
+    text-align: left;
+    /* Căn chữ sang trái */
+    padding: 10px 10px 10px 10px;
+    /* Tạo khoảng cách cho nội dung */
+}
+
+.search-content-right {
+    flex: 1.5;
+    /* Chia đều không gian bên phải */
+    display: flex;
+    justify-content: center;
+    /* Đặt ảnh vào giữa */
+    align-items: flex-start;
+    /* Căn giữa ảnh theo chiều dọc */
+    align-self: start;
+    flex-direction: column;
+}
