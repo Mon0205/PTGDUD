@@ -1,0 +1,29 @@
+.cart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* Chia thành nhiều cột */
+    gap: 20px;
+    /* Khoảng cách giữa các cột */
+    padding: 10px;
+    width: 100%;
+    max-width: 1000px;
+    /* Giới hạn độ rộng */
+    margin: auto;
+    background-color: #f9f9f9;
+}
+
+.cartlist {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}

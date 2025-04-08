@@ -1,0 +1,20 @@
+.navbar {
+    background-color: black;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-link.active {
+    color: white !important;
+    /* Đảm bảo chữ luôn trắng khi mục đang chọn */
+}
